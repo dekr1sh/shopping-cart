@@ -18,14 +18,16 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cartItems))
 
-    const totItems = cartItems.reduce((total, item) => total + item.quantity, 0)
-    setTotalItems(totItems)
+    const items = cartItems.reduce((total, item) => total + item.quantity, 0)
+    setTotalItems(items)
 
     const price = cartItems.reduce((total, item) => total + item.price * item.quantity, 0)
     setTotalPrice(price)
   }, [cartItems])
 
   const addToCart = (product: Product, size: string, quantity: number) => {
+    if(quantity <= 0) return;
+
     setCartItems((prevItems) => {
       const existingItemIndex = prevItems.findIndex((item) => item.id === product.id && item.size === size)
 
@@ -44,10 +46,12 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   }
 
   const updateQuantity = (productId: string, quantity: number) => {
-    setCartItems((prevItems) =>
-      prevItems.map((item) => (item.id === +productId ? { ...item, quantity: Math.max(1, quantity) } : item)),
-    )
-  }
+  if (quantity <= 0) return; 
+
+  setCartItems((prevItems) =>
+    prevItems.map((item) => (item.id === +productId ? { ...item, quantity } : item))
+  );
+};
 
   const clearCart = () => {
     setCartItems([])
