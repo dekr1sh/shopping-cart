@@ -6,7 +6,7 @@ exports[`Navbar > renders correctly when mobile menu is closed 1`] = `
     class="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b"
   >
     <div
-      class="container mx-auto px-4"
+      class="mx-auto px-4"
     >
       <div
         class="flex items-center justify-between h-16"
@@ -122,7 +122,7 @@ exports[`Navbar > renders correctly when mobile menu is open 1`] = `
     class="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b"
   >
     <div
-      class="container mx-auto px-4"
+      class="mx-auto px-4"
     >
       <div
         class="flex items-center justify-between h-16"

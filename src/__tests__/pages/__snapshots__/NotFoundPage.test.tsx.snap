@@ -3,7 +3,7 @@
 exports[`NotFoundPage > matches the snapshot 1`] = `
 <div>
   <div
-    class="container mx-auto flex min-h-[70vh] flex-col items-center justify-center px-4 text-center"
+    class="mx-auto flex min-h-[70vh] flex-col items-center justify-center px-4 text-center"
   >
     <h2
       class="text-3xl font-bold mb-4"
