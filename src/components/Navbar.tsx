@@ -33,64 +33,25 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b container mx-auto px-4">
-      <div className="flex items-center justify-between h-16">
-        {/* Logo */}
-        <Link to="/" className="font-bold text-xl flex items-center">
-          <span className="text-primary">Drip</span>Kicks
-        </Link>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link
-            to="/"
-            className={`hover:text-primary transition-colors ${location.pathname === "/" ? "text-primary font-medium" : ""}`}
-          >
-            Home
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link to="/" className="font-bold text-xl flex items-center">
+            <span className="text-primary">Drip</span>Kicks
           </Link>
-          <Link
-            to="/shop"
-            className={`hover:text-primary transition-colors ${location.pathname === "/shop" ? "text-primary font-medium" : ""}`}
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
-            Shop
-          </Link>
-        </nav>
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
 
-        {/* Cart Button */}
-        <div className="relative" ref={cartRef}>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="relative"
-            onClick={() => setIsCartOpen(!isCartOpen)}
-            aria-label="Shopping cart"
-          >
-            <ShoppingBag />
-            {totalItems > 0 && (
-              <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                {totalItems}
-              </span>
-            )}
-          </Button>
-
-          {/* Cart Dropdown */}
-          {isCartOpen && <CartDropdown onClose={() => setIsCartOpen(false)} />}
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <div data-testid="mobile-menu" className="md:hidden py-4 border-t">
-          <nav className="flex flex-col space-y-4">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
               className={`hover:text-primary transition-colors ${location.pathname === "/" ? "text-primary font-medium" : ""}`}
@@ -104,8 +65,49 @@ export default function Navbar() {
               Shop
             </Link>
           </nav>
+
+          {/* Cart Button */}
+          <div className="relative" ref={cartRef}>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="relative"
+              onClick={() => setIsCartOpen(!isCartOpen)}
+              aria-label="Shopping cart"
+            >
+              <ShoppingBag />
+              {totalItems > 0 && (
+                <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </Button>
+
+            {/* Cart Dropdown */}
+            {isCartOpen && <CartDropdown onClose={() => setIsCartOpen(false)} />}
+          </div>
         </div>
-      )}
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div data-testid="mobile-menu" className="md:hidden py-4 border-t">
+            <nav className="flex flex-col space-y-4">
+              <Link
+                to="/"
+                className={`hover:text-primary transition-colors ${location.pathname === "/" ? "text-primary font-medium" : ""}`}
+              >
+                Home
+              </Link>
+              <Link
+                to="/shop"
+                className={`hover:text-primary transition-colors ${location.pathname === "/shop" ? "text-primary font-medium" : ""}`}
+              >
+                Shop
+              </Link>
+            </nav>
+          </div>
+        )}
+      </div>
     </header>
   );
 }
