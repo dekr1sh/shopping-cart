@@ -1,0 +1,481 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HomePage > renders correctly 1`] = `
+<div>
+  <main
+    class="flex flex-col min-h-screen"
+  >
+    <section
+      class="h-[40vh] flex justify-center items-center"
+    >
+      <div
+        class="px-4 text-center"
+      >
+        <h1
+          class="text-4xl md:text-6xl font-bold text-white mb-4"
+        >
+          Step Into 
+          <span
+            class="text-primary"
+          >
+            Style
+          </span>
+        </h1>
+        <p
+          class="text-xl text-white/90 mb-8"
+        >
+          Discover the latest and greatest sneakers at DripKicks.
+          <br />
+          Your journey to sneaker excellence starts here.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs h-10 rounded-md px-6 has-[>svg]:px-4 text-lg hover:bg-primary/85"
+            data-discover="true"
+            data-slot="button"
+            href="/shop"
+          >
+            Shop Now 
+            <svg
+              class="lucide lucide-arrow-right ml-2 h-5 w-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12h14"
+              />
+              <path
+                d="m12 5 7 7-7 7"
+              />
+            </svg>
+          </a>
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-10 rounded-md px-6 has-[>svg]:px-4 text-lg text-white bg-white/10 hover:bg-white/20 border-white/20"
+            data-slot="button"
+            href="#featured"
+          >
+            Featured Kicks
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 bg-background"
+    >
+      <div
+        class="px-4"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center gap-8"
+        >
+          <div
+            class="w-full md:w-1/2"
+          >
+            <h2
+              class="text-3xl font-bold mb-4"
+            >
+              Welcome to DripKicks
+            </h2>
+            <p
+              class="text-muted-foreground mb-6"
+            >
+              At DripKicks, we're passionate about sneakers. Our carefully curated collection features the most sought-after styles from top brands around the world. Whether you're a seasoned collector or looking for your first premium pair, we've got you covered.
+            </p>
+            <p
+              class="text-muted-foreground mb-6"
+            >
+              We believe that the right pair of sneakers can elevate your style and boost your confidence. That's why we're committed to offering only authentic, high-quality footwear that stands the test of time.
+            </p>
+            <a
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs h-9 px-4 py-2 has-[>svg]:px-3 hover:bg-primary/85"
+              data-discover="true"
+              data-slot="button"
+              href="/shop"
+            >
+              Explore Our Collection
+            </a>
+          </div>
+          <div
+            class="w-full md:w-1/2 grid grid-cols-2 gap-4"
+          >
+            <div
+              class="relative aspect-square"
+            >
+              <img
+                alt="Premium sneakers"
+                class="object-cover rounded-lg w-full h-full"
+                src="/src/assets/other-images/placeholder.png"
+              />
+            </div>
+            <div
+              class="relative aspect-square"
+            >
+              <img
+                alt="Latest styles"
+                class="object-cover rounded-lg w-full h-full"
+                src="/src/assets/other-images/placeholder.png"
+              />
+            </div>
+            <div
+              class="relative aspect-square"
+            >
+              <img
+                alt="Exclusive drops"
+                class="object-cover rounded-lg w-full h-full"
+                src="/src/assets/other-images/placeholder.png"
+              />
+            </div>
+            <div
+              class="relative aspect-square"
+            >
+              <img
+                alt="Authentic brands"
+                class="object-cover rounded-lg w-full h-full"
+                src="/src/assets/other-images/placeholder.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 bg-muted/30"
+      id="featured"
+    >
+      <div
+        class="px-4"
+      >
+        <h2
+          class="text-3xl font-bold mb-8 text-center"
+        >
+          Featured Kicks
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          <a
+            data-discover="true"
+            href="/product/1"
+          >
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full"
+            >
+              <div
+                class="relative h-64"
+              >
+                <img
+                  alt="Air Max 90"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="p-4"
+              >
+                <h3
+                  class="font-bold text-xl mb-2"
+                >
+                  Air Max 90
+                </h3>
+                <p
+                  class="text-muted-foreground mb-4"
+                >
+                  Nike
+                </p>
+                <div
+                  class="flex justify-between items-center"
+                >
+                  <span
+                    class="text-lg font-bold"
+                  >
+                    ₹
+                    9999.99
+                  </span>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                  >
+                    <span>
+                      View Details
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/2"
+          >
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full"
+            >
+              <div
+                class="relative h-64"
+              >
+                <img
+                  alt="NMD R1"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="p-4"
+              >
+                <h3
+                  class="font-bold text-xl mb-2"
+                >
+                  NMD R1
+                </h3>
+                <p
+                  class="text-muted-foreground mb-4"
+                >
+                  Adidas
+                </p>
+                <div
+                  class="flex justify-between items-center"
+                >
+                  <span
+                    class="text-lg font-bold"
+                  >
+                    ₹
+                    10999.99
+                  </span>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                  >
+                    <span>
+                      View Details
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/3"
+          >
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full"
+            >
+              <div
+                class="relative h-64"
+              >
+                <img
+                  alt="990v5"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="p-4"
+              >
+                <h3
+                  class="font-bold text-xl mb-2"
+                >
+                  990v5
+                </h3>
+                <p
+                  class="text-muted-foreground mb-4"
+                >
+                  New Balance
+                </p>
+                <div
+                  class="flex justify-between items-center"
+                >
+                  <span
+                    class="text-lg font-bold"
+                  >
+                    ₹
+                    13999.99
+                  </span>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
+                    data-slot="button"
+                  >
+                    <span>
+                      View Details
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="text-center mt-10"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs h-10 rounded-md px-6 has-[>svg]:px-4 hover:bg-primary/85"
+            data-discover="true"
+            data-slot="button"
+            href="/shop"
+          >
+            View All Products
+          </a>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16"
+    >
+      <div
+        class="px-4"
+      >
+        <h2
+          class="text-3xl font-bold mb-12 text-center"
+        >
+          Why Choose DripKicks
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          <div
+            class="text-center p-6 rounded-lg bg-muted/20"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="lucide lucide-circle-check-big h-8 w-8 text-primary"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.801 10A10 10 0 1 1 17 3.335"
+                />
+                <path
+                  d="m9 11 3 3L22 4"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-2"
+            >
+              Authentic Products
+            </h3>
+            <p
+              class="text-muted-foreground"
+            >
+              All our sneakers are 100% authentic with guaranteed quality.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 rounded-lg bg-muted/20"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="lucide lucide-truck h-8 w-8 text-primary"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"
+                />
+                <path
+                  d="M15 18H9"
+                />
+                <path
+                  d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"
+                />
+                <circle
+                  cx="17"
+                  cy="18"
+                  r="2"
+                />
+                <circle
+                  cx="7"
+                  cy="18"
+                  r="2"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-2"
+            >
+              Fast Delivery
+            </h3>
+            <p
+              class="text-muted-foreground"
+            >
+              Get your favorite kicks delivered to your doorstep in no time.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 rounded-lg bg-muted/20"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="lucide lucide-credit-card h-8 w-8 text-primary"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  height="14"
+                  rx="2"
+                  width="20"
+                  x="2"
+                  y="5"
+                />
+                <line
+                  x1="2"
+                  x2="22"
+                  y1="10"
+                  y2="10"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-2"
+            >
+              Secure Payment
+            </h3>
+            <p
+              class="text-muted-foreground"
+            >
+              Multiple payment options with secure checkout process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+     
+</div>
+`;
