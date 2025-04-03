@@ -36,12 +36,10 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b">
       <div className="mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link to="/" className="font-bold text-xl flex items-center">
             <span className="text-primary">Drip</span>Kicks
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -50,7 +48,6 @@ export default function Navbar() {
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
@@ -66,7 +63,6 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          {/* Cart Button */}
           <div className="relative" ref={cartRef}>
             <Button
               variant="ghost"
@@ -83,12 +79,10 @@ export default function Navbar() {
               )}
             </Button>
 
-            {/* Cart Dropdown */}
             {isCartOpen && <CartDropdown onClose={() => setIsCartOpen(false)} />}
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div data-testid="mobile-menu" className="md:hidden py-4 border-t">
             <nav className="flex flex-col space-y-4">
