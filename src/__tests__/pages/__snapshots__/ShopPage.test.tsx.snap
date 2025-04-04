@@ -1,0 +1,607 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShopPage > renders correctly when there are filtered products 1`] = `
+<div>
+  <div
+    class="px-4 py-8"
+  >
+    <h1
+      class="text-3xl font-bold mb-8"
+    >
+      Shop All Sneakers
+    </h1>
+    <div
+      class="flex flex-col md:flex-row gap-6 mb-8"
+    >
+      <div
+        class="w-full md:w-1/4 space-y-4"
+      >
+        <div>
+          <label>
+            <input
+              name="Nike"
+              type="checkbox"
+            />
+            Nike
+          </label>
+          <button>
+            Clear Filters
+          </button>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-3/4"
+      >
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <a
+            data-discover="true"
+            href="/product/1"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="Air Max 90"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    Air Max 90
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    9999.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Nike
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/2"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="NMD R1"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    NMD R1
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    10999.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Adidas
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/3"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="990v5"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    990v5
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    13999.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  New Balance
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/4"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="Ultraboost 21"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    Ultraboost 21
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    11999.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Adidas
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/5"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="Air Force 1"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    Air Force 1
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    7999.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Nike
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/6"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="RS-X³"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    RS-X³
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    8499.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Puma
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/7"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="Suede Classic"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    Suede Classic
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    5499.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Puma
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/8"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="574 Core"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    574 Core
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    6499.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  New Balance
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+          <a
+            data-discover="true"
+            href="/product/9"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer"
+              data-slot="card"
+            >
+              <div
+                class="relative h-48 bg-muted"
+              >
+                <img
+                  alt="Dunk Low"
+                  class="object-cover w-full h-full"
+                  src="/src/assets/other-images/placeholder.png"
+                />
+              </div>
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
+              >
+                <div
+                  class="flex justify-between items-start"
+                >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    Dunk Low
+                  </div>
+                  <span
+                    class="font-bold"
+                  >
+                    ₹
+                    8999.99
+                  </span>
+                </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Nike
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+</div>
+`;
+
+exports[`ShopPage > renders correctly when there are no filtered products 1`] = `
+<div>
+  <div
+    class="px-4 py-8"
+  >
+    <h1
+      class="text-3xl font-bold mb-8"
+    >
+      Shop All Sneakers
+    </h1>
+    <div
+      class="flex flex-col md:flex-row gap-6 mb-8"
+    >
+      <div
+        class="w-full md:w-1/4 space-y-4"
+      >
+        <div>
+          <label>
+            <input
+              name="Nike"
+              type="checkbox"
+            />
+            Nike
+          </label>
+          <button>
+            Clear Filters
+          </button>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-3/4"
+      >
+        <div
+          class="text-center py-12"
+        >
+          <h3
+            class="text-lg font-medium mb-2"
+          >
+            No products found
+          </h3>
+          <p
+            class="text-muted-foreground mb-4"
+          >
+            Try adjusting your filters to find what you're looking for.
+          </p>
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3"
+            data-slot="button"
+          >
+            Clear Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+</div>
+`;
