@@ -2,8 +2,6 @@ import { describe, it, expect } from "vitest";
 import {
   getFeaturedProducts,
   getBrands,
-  getProductsByBrand,
-  getProductsByPriceRange,
   getFilteredProducts,
 } from "@/lib/productUtils";
 import type { Product } from "@/data/products";
@@ -25,18 +23,6 @@ describe("productUtils", () => {
 
   it("should return unique brands", () => {
     expect(getBrands(mockProducts)).toEqual(["Nike", "Adidas", "Puma"]);
-  });
-
-  it("should filter products by brand", () => {
-    expect(getProductsByBrand(mockProducts, ["Nike"])).toHaveLength(2);
-    expect(getProductsByBrand(mockProducts, ["Adidas"])).toHaveLength(1);
-    expect(getProductsByBrand(mockProducts, [])).toHaveLength(mockProducts.length);
-  });
-
-  it("should filter products by price range", () => {
-    expect(getProductsByPriceRange(mockProducts, 100, 200)).toHaveLength(3);
-    expect(getProductsByPriceRange(mockProducts, 200)).toHaveLength(2);
-    expect(getProductsByPriceRange(mockProducts, undefined, 150)).toHaveLength(2);
   });
 
   it("should filter products by brand and price range", () => {

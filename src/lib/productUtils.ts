@@ -9,12 +9,12 @@ export function getBrands(products: Product[]) {
   return Array.from(brands);
 }
 
-export function getProductsByBrand(products: Product[], brandNames: string[]) {
+function getProductsByBrand(products: Product[], brandNames: string[]) {
   if (!brandNames.length) return products;
   return products.filter((product) => brandNames.includes(product.brand));
 }
 
-export function getProductsByPriceRange(products: Product[], min?: number, max?: number) {
+function getProductsByPriceRange(products: Product[], min?: number, max?: number) {
   if(min === undefined && max === undefined) return products;
 
   return products.filter((product) => {
