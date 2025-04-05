@@ -50,12 +50,12 @@ export default function ShopPage() {
             <div className="text-center py-12">
               <h3 className="text-lg font-medium mb-2">No products found</h3>
               <p className="text-muted-foreground mb-4">Try adjusting your filters to find what you're looking for.</p>
-              <Button onClick={clearFilters}>Clear Filters</Button>
+              <Button onClick={clearFilters} className="cursor-pointer">Clear Filters</Button>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
-                <Link to={`/product/${product.id}`} key={product.id}>
+                <Link to={`/products/${product.id}`} key={product.id}>
                   <Card className="overflow-hidden h-full transition-transform hover:scale-105 cursor-pointer">
                     <div className="relative h-48 bg-muted">
                       <img
