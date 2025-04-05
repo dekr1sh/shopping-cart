@@ -1,0 +1,285 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductPage > renders correctly with invalid product ID 1`] = `
+<div>
+  <div
+    class="text-center text-xl py-10 text-red-500"
+  >
+    Product not found
+  </div>
+     
+</div>
+`;
+
+exports[`ProductPage > renders correctly with valid product ID 1`] = `
+<div>
+  <div
+    class="px-4 py-8"
+  >
+    <div
+      class="flex flex-col md:flex-row gap-8"
+    >
+      <div
+        class="w-full md:w-1/2"
+      >
+        <div
+          class="bg-muted rounded-lg overflow-hidden mb-4 relative aspect-square"
+        >
+          <img
+            alt="Air Max 90"
+            class="object-cover w-full h-full"
+            src="/src/assets/other-images/placeholder.png"
+          />
+        </div>
+        <div
+          class="grid grid-cols-4 gap-2"
+        >
+          <div
+            class="bg-muted rounded-lg overflow-hidden cursor-pointer relative aspect-square"
+          >
+            <img
+              alt="Air Max 90 view 1"
+              class="object-cover w-full h-full"
+              src="/src/assets/other-images/placeholder.png"
+            />
+          </div>
+          <div
+            class="bg-muted rounded-lg overflow-hidden cursor-pointer relative aspect-square"
+          >
+            <img
+              alt="Air Max 90 view 2"
+              class="object-cover w-full h-full"
+              src="/src/assets/other-images/placeholder.png"
+            />
+          </div>
+          <div
+            class="bg-muted rounded-lg overflow-hidden cursor-pointer relative aspect-square"
+          >
+            <img
+              alt="Air Max 90 view 3"
+              class="object-cover w-full h-full"
+              src="/src/assets/other-images/placeholder.png"
+            />
+          </div>
+          <div
+            class="bg-muted rounded-lg overflow-hidden cursor-pointer relative aspect-square"
+          >
+            <img
+              alt="Air Max 90 view 4"
+              class="object-cover w-full h-full"
+              src="/src/assets/other-images/placeholder.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/2"
+      >
+        <h1
+          class="text-3xl font-bold mb-2"
+        >
+          Air Max 90
+        </h1>
+        <p
+          class="text-muted-foreground mb-4"
+        >
+          Nike
+        </p>
+        <div
+          class="text-2xl font-bold mb-6"
+        >
+          ₹
+          9999.99
+        </div>
+        <div
+          class="mb-6"
+        >
+          <h3
+            class="font-medium mb-2"
+          >
+            Description
+          </h3>
+          <p
+            class="text-muted-foreground"
+          >
+            The Nike Air Max 90 stays true to its OG running roots with the iconic Waffle outsole, stitched overlays and classic TPU details. Classic colors celebrate your fresh look while Max Air cushioning adds comfort to your journey. This legendary shoe continues to deliver the same lightweight cushioning that made it famous.
+          </p>
+        </div>
+        <div
+          class="mb-6"
+        >
+          <h3
+            class="font-medium mb-2"
+          >
+            Select Size
+          </h3>
+          <div
+            class="grid grid-cols-4 gap-2"
+          >
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              7
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              7.5
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              8
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              8.5
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              9
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              9.5
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              10
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              10.5
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              11
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              11.5
+            </button>
+            <button
+              class="py-2 px-4 rounded border cursor-pointer bg-background text-foreground border-border hover:border-primary"
+            >
+              12
+            </button>
+          </div>
+        </div>
+        <div
+          class="mb-6"
+        >
+          <h3
+            class="font-medium mb-2"
+          >
+            Quantity
+          </h3>
+          <div
+            class="flex items-center border border-border rounded w-32"
+          >
+            <button
+              class="px-3 py-1 hover:bg-muted cursor-pointer"
+              disabled=""
+            >
+              -
+            </button>
+            <input
+              class="w-full text-center py-1 border-0 focus:ring-0 bg-transparent"
+              min="1"
+              type="number"
+              value="1"
+            />
+            <button
+              class="px-3 py-1 hover:bg-muted cursor-pointer"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6 has-[>svg]:px-4 w-full cursor-pointer"
+          data-slot="button"
+        >
+          Add to Cart
+        </button>
+        <div
+          class="border-t border-border pt-6 mt-6 space-y-4"
+        >
+          <div
+            class="flex items-center"
+          >
+            <svg
+              class="lucide lucide-clock w-5 h-5 text-muted-foreground mr-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+              <polyline
+                points="12 6 12 12 16 14"
+              />
+            </svg>
+            <span
+              class="text-muted-foreground"
+            >
+              Fast Shipping (2-4 business days)
+            </span>
+          </div>
+          <div
+            class="flex items-center"
+          >
+            <svg
+              class="lucide lucide-refresh-ccw w-5 h-5 text-muted-foreground mr-2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+              />
+              <path
+                d="M3 3v5h5"
+              />
+              <path
+                d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"
+              />
+              <path
+                d="M16 16h5v5"
+              />
+            </svg>
+            <span
+              class="text-muted-foreground"
+            >
+              Free returns within 30 days
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+</div>
+`;
