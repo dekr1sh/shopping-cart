@@ -25,7 +25,7 @@ describe("FilterSection", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it.only("calls onMinPriceChange when the min price input changes", async () => {
+  it("calls onMinPriceChange when the min price input changes", async () => {
     render(<FilterSection {...defaultProps} />);
 
     const minPriceInput = screen.getByPlaceholderText("Min");
