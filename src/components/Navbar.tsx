@@ -41,7 +41,7 @@ export default function Navbar() {
           </Link>
 
           <button
-            className="md:hidden"
+            className="md:hidden cursor-pointer"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
@@ -67,7 +67,7 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="relative"
+              className="relative cursor-pointer"
               onClick={() => setIsCartOpen(!isCartOpen)}
               aria-label="Shopping cart"
             >

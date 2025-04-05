@@ -55,7 +55,7 @@ export default function FilterSection({
                     id={`brand-${brand}`}
                     checked={selectedBrands.includes(brand)}
                     onCheckedChange={(checked) => onBrandChange(brand, checked === true)}
-                    className="border-gray-600"
+                    className="border-gray-600 cursor-pointer"
                   />
                   <Label
                     htmlFor={`brand-${brand}`}
@@ -103,7 +103,7 @@ export default function FilterSection({
         <CardFooter className="pt-2">
           <Button
             variant="outline"
-            className="w-full border-[#2a3042] text-white hover:bg-[#1a1f2a]"
+            className="w-full border-[#2a3042] text-white hover:bg-[#1a1f2a] cursor-pointer"
             onClick={onClearFilters}
           >
             Clear All
