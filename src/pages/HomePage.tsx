@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle, Truck, CreditCard } from "lucide-react"
 import { getFeaturedProducts } from "@/lib/productUtils"
 import { products } from "@/data/products"
-import placeholder  from "./../assets/other-images/placeholder.png"
+import placeholder from "./../assets/other-images/placeholder.png"
+import { Card, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function HomePage() {
   const featuredProducts = getFeaturedProducts(products, 3)
@@ -16,8 +17,8 @@ export default function HomePage() {
             Step Into <span className="text-primary">Style</span>
           </h1>
           <p className="text-xl text-white/90 mb-8">
-            Discover the latest and greatest sneakers at DripKicks. 
-            <br/>
+            Discover the latest and greatest sneakers at DripKicks.
+            <br />
             Your journey to sneaker excellence starts here.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -34,92 +35,94 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 bg-background">
-      <div className="px-4">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold mb-4">Welcome to DripKicks</h2>
-            <p className="text-muted-foreground mb-6">
-              At DripKicks, we're passionate about sneakers. Our carefully curated collection features the most
-              sought-after styles from top brands around the world. Whether you're a seasoned collector or looking for
-              your first premium pair, we've got you covered.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              We believe that the right pair of sneakers can elevate your style and boost your confidence. That's why
-              we're committed to offering only authentic, high-quality footwear that stands the test of time.
-            </p>
-            <Button asChild className="hover:bg-primary/85">
-              <Link to="/shop">Explore Our Collection</Link>
-            </Button>
-          </div>
-          <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
-            <div className="relative aspect-square">
-              <img
-                src={placeholder}
-                alt="Premium sneakers"
-                className="object-cover rounded-lg w-full h-full"
-              />
+        <div className="px-4">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl font-bold mb-4">Welcome to DripKicks</h2>
+              <p className="text-muted-foreground mb-6">
+                At DripKicks, we're passionate about sneakers. Our carefully curated collection features the most
+                sought-after styles from top brands around the world. Whether you're a seasoned collector or looking for
+                your first premium pair, we've got you covered.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                We believe that the right pair of sneakers can elevate your style and boost your confidence. That's why
+                we're committed to offering only authentic, high-quality footwear that stands the test of time.
+              </p>
+              <Button asChild className="hover:bg-primary/85">
+                <Link to="/shop">Explore Our Collection</Link>
+              </Button>
             </div>
-            <div className="relative aspect-square">
-              <img
-                src={placeholder}
-                alt="Latest styles"
-                className="object-cover rounded-lg w-full h-full"
-              />
-            </div>
-            <div className="relative aspect-square">
-              <img
-                src={placeholder}
-                alt="Exclusive drops"
-                className="object-cover rounded-lg w-full h-full"
-              />
-            </div>
-            <div className="relative aspect-square">
-              <img
-                src={placeholder}
-                alt="Authentic brands"
-                className="object-cover rounded-lg w-full h-full"
-              />
+            <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
+              <div className="relative aspect-square">
+                <img
+                  src={placeholder}
+                  alt="Premium sneakers"
+                  className="object-cover rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative aspect-square">
+                <img
+                  src={placeholder}
+                  alt="Latest styles"
+                  className="object-cover rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative aspect-square">
+                <img
+                  src={placeholder}
+                  alt="Exclusive drops"
+                  className="object-cover rounded-lg w-full h-full"
+                />
+              </div>
+              <div className="relative aspect-square">
+                <img
+                  src={placeholder}
+                  alt="Authentic brands"
+                  className="object-cover rounded-lg w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <section id="featured" className="py-16 bg-muted/30">
-      <div className="px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Featured Kicks</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {featuredProducts.map((product) => (
-            <Link to={`/product/${product.id}`} key={product.id}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full">
-                <div className="relative h-64">
-                  <img 
-                    src={product.image || placeholder} 
-                    alt={product.name} 
-                    className="object-cover w-full h-full" 
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-xl mb-2">{product.name}</h3>
-                  <p className="text-muted-foreground mb-4">{product.brand}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold">₹{product.price.toFixed(2)}</span>
-                    <Button variant="secondary">
-                      <span>View Details</span>
-                    </Button>
+        <div className="px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Featured Kicks</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredProducts.map((product) => (
+              <Link to={`/products/${product.id}`} key={product.id}>
+                <Card className="overflow-hidden h-full transition-transform hover:scale-105">
+                  <div className="relative h-64 bg-muted">
+                    <img
+                      src={product.image || placeholder}
+                      alt={product.name}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
-                </div>
-              </div>
-            </Link>
-          ))}
+                  <CardHeader className="p-4 pb-0">
+                    <div className="flex justify-between items-start">
+                      <CardTitle className="text-lg">{product.name}</CardTitle>
+                      <span className="font-bold">₹{product.price.toFixed(2)}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{product.brand}</p>
+                  </CardHeader>
+                  <CardFooter className="p-4 pt-2">
+                    <Button variant="secondary" className="w-full">
+                      View Details
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Button asChild size="lg" className="hover:bg-primary/85">
+              <Link to="/shop">View All Products</Link>
+            </Button>
+          </div>
         </div>
-        <div className="text-center mt-10">
-          <Button asChild size="lg" className="hover:bg-primary/85">
-            <Link to="/shop">View All Products</Link>
-          </Button>
-        </div>
-      </div>
-    </section>
+      </section>
 
       <section className="py-16">
         <div className="px-4">

@@ -164,13 +164,14 @@ exports[`HomePage > renders correctly 1`] = `
         >
           <a
             data-discover="true"
-            href="/product/1"
+            href="/products/1"
           >
             <div
-              class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full"
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105"
+              data-slot="card"
             >
               <div
-                class="relative h-64"
+                class="relative h-64 bg-muted"
               >
                 <img
                   alt="Air Max 90"
@@ -179,48 +180,54 @@ exports[`HomePage > renders correctly 1`] = `
                 />
               </div>
               <div
-                class="p-4"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
               >
-                <h3
-                  class="font-bold text-xl mb-2"
-                >
-                  Air Max 90
-                </h3>
-                <p
-                  class="text-muted-foreground mb-4"
-                >
-                  Nike
-                </p>
                 <div
-                  class="flex justify-between items-center"
+                  class="flex justify-between items-start"
                 >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    Air Max 90
+                  </div>
                   <span
-                    class="text-lg font-bold"
+                    class="font-bold"
                   >
                     ₹
                     9999.99
                   </span>
-                  <button
-                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
-                    data-slot="button"
-                  >
-                    <span>
-                      View Details
-                    </span>
-                  </button>
                 </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Nike
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
               </div>
             </div>
           </a>
           <a
             data-discover="true"
-            href="/product/2"
+            href="/products/2"
           >
             <div
-              class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full"
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105"
+              data-slot="card"
             >
               <div
-                class="relative h-64"
+                class="relative h-64 bg-muted"
               >
                 <img
                   alt="NMD R1"
@@ -229,48 +236,54 @@ exports[`HomePage > renders correctly 1`] = `
                 />
               </div>
               <div
-                class="p-4"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
               >
-                <h3
-                  class="font-bold text-xl mb-2"
-                >
-                  NMD R1
-                </h3>
-                <p
-                  class="text-muted-foreground mb-4"
-                >
-                  Adidas
-                </p>
                 <div
-                  class="flex justify-between items-center"
+                  class="flex justify-between items-start"
                 >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    NMD R1
+                  </div>
                   <span
-                    class="text-lg font-bold"
+                    class="font-bold"
                   >
                     ₹
                     10999.99
                   </span>
-                  <button
-                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
-                    data-slot="button"
-                  >
-                    <span>
-                      View Details
-                    </span>
-                  </button>
                 </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  Adidas
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
               </div>
             </div>
           </a>
           <a
             data-discover="true"
-            href="/product/3"
+            href="/products/3"
           >
             <div
-              class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105 h-full"
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden h-full transition-transform hover:scale-105"
+              data-slot="card"
             >
               <div
-                class="relative h-64"
+                class="relative h-64 bg-muted"
               >
                 <img
                   alt="990v5"
@@ -279,36 +292,41 @@ exports[`HomePage > renders correctly 1`] = `
                 />
               </div>
               <div
-                class="p-4"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-0"
+                data-slot="card-header"
               >
-                <h3
-                  class="font-bold text-xl mb-2"
-                >
-                  990v5
-                </h3>
-                <p
-                  class="text-muted-foreground mb-4"
-                >
-                  New Balance
-                </p>
                 <div
-                  class="flex justify-between items-center"
+                  class="flex justify-between items-start"
                 >
+                  <div
+                    class="font-semibold text-lg"
+                    data-slot="card-title"
+                  >
+                    990v5
+                  </div>
                   <span
-                    class="text-lg font-bold"
+                    class="font-bold"
                   >
                     ₹
                     13999.99
                   </span>
-                  <button
-                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
-                    data-slot="button"
-                  >
-                    <span>
-                      View Details
-                    </span>
-                  </button>
                 </div>
+                <p
+                  class="text-sm text-muted-foreground"
+                >
+                  New Balance
+                </p>
+              </div>
+              <div
+                class="flex items-center [.border-t]:pt-6 p-4 pt-2"
+                data-slot="card-footer"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+                  data-slot="button"
+                >
+                  View Details
+                </button>
               </div>
             </div>
           </a>
