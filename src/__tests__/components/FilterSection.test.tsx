@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
-import { render } from "@testing-library/react";
+import { render } from "@/__tests__/test-utils";
 import userEvent from "@testing-library/user-event";
-import { screen } from "@testing-library/dom";
+import { screen } from "@testing-library/react";
 import FilterSection from "@/components/FilterSection";
 
 describe("FilterSection", () => {
